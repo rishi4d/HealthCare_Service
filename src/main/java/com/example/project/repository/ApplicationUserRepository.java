@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.example.project.Model.Appointment;
+import com.example.project.Model.ApplicationUser;
 import org.springframework.stereotype.Repository;
 
 
