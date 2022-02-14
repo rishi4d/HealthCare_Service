@@ -34,7 +34,15 @@ public class AppointmentService {
         return appointmentRepository.findById(appointment);
     }
 
+    public Optional<Appointment> getAllAppointments(String appointment) {
+        return appointmentRepository.findAll();
+    }
+
     public void deleteById(String appointment) {
+        appointmentRepository.deleteById(appointment);
+    }
+
+    public void deleteAppointment(String appointment) {
         appointmentRepository.deleteById(appointment);
     }
 
