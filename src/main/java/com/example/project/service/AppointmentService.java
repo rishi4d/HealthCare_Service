@@ -30,11 +30,11 @@ public class AppointmentService {
         return appointmentRepository.findAll();
     }
 
-    public List<Appointment> findById(String appointment) {
+    public Optional<Appointment> findById(String appointment) {
         return appointmentRepository.findById(appointment);
     }
 
-    public Optional<Appointment> getAllAppointments() {
+    public List<Appointment> getAllAppointments(String appointment) {
         return appointmentRepository.findAll();
     }
 
