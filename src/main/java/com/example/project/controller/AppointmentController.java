@@ -38,8 +38,8 @@ public class AppointmentController {
     }
 
     @GetMapping("list/{patientid}")
-    public ResponseEntity<List<Appointment>> listAppointmentofPatient(){
-        return new ResponseEntity<List<Appointment>>(AppointmentRepository.findByPatientId(), HttpStatus.OK);
+    public ResponseEntity<List<Appointment>> listAppointmentofPatient(@PathVariable String patientId){
+        return new ResponseEntity<List<Appointment>>(AppointmentRepository.findByPatientId(patientId), HttpStatus.OK);
     }
 
     @DeleteMapping("delete/{appointmentId}")
