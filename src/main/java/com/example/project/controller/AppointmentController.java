@@ -16,7 +16,7 @@ import com.example.project.repository.AppointmentRepository;
 import com.example.project.service.AppointmentService;
 
 @RestController
-@RequestMapping("appointments")
+@RequestMapping("appointment")
 public class AppointmentController {
 
     @Autowired
