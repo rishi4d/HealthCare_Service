@@ -38,7 +38,7 @@ public class AppointmentService {
         appointmentRepository.deleteById(appointment);
     }
 
-    public static List<Appointment> findByPatientId(String appointment) {
+    public List<Appointment> findByPatientId(String appointment) {
         return appointmentRepository.findByPatientId(appointment);
     }
   
