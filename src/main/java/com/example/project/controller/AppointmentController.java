@@ -43,8 +43,8 @@ public class AppointmentController {
     }
 
     @DeleteMapping("delete/{appointmentId}")
-    public ResponseEntity<Appointment> deleteAppointment(@PathVariable String appointmentId){
-        return ResponseEntity.ok(appointmentService.deleteById(appointmentId));
+    public void deleteAppointment(@PathVariable String appointmentId){
+        appointmentService.deleteById(appointmentId);
     }
 
 }
