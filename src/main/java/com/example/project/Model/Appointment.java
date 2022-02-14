@@ -14,7 +14,7 @@ import org.hibernate.annotations.GenericGenerator;
 @Entity
 @Data
 public class Appointment {
-
+    @Id
     private String booking_id;
     private String disease;
 
