@@ -8,6 +8,6 @@ import com.example.project.Model.ApplicationUser;
 import org.springframework.stereotype.Repository;
 
 
-public interface ApplicationUserRepository extends JpaRepository<Appointment,String>{
+public interface ApplicationUserRepository extends JpaRepository<ApplicationUser,String>{
 
 }
