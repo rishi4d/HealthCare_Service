@@ -26,7 +26,7 @@ public class MyUserDetailsService implements UserDetailsService {
         LOG.info("Finding details for {}", username);
         ;
         if(repository.findById(username).get().isPresent()){
-            return new MyUserPrincipal(repository.findById(username).get().getUser_name(), user.get().getPassword());
+            return new MyUserPrincipal(repository.findById(username).get().getUser_name(), repository.findById(username).get().getPassword());
         }
         return null;
     }
