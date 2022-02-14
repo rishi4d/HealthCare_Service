@@ -25,7 +25,7 @@ public class PatientService {
         return repository.save(patient);
     }
 
-    public static Optional<Patient> findById(String id){
+    public Optional<Patient> findById(String id){
         return repository.findById(id);
     }
 
