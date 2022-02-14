@@ -15,6 +15,8 @@ import org.hibernate.annotations.GenericGenerator;
 @Data
 public class Patient {
     @Id
+    @GeneratedValue(generator="system-uuid")
+    @GenericGenerator(name="system-uuid", strategy = "uuid")
     private String patient_Id;
     private String patient_name;
     private String patient_email;
